@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.missa.evaluacionlabdispositivos.Estudiante">
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:text="Nombre" />
+
+    <TextView
+        android:id="@+id/txtCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtNombre"
+        android:layout_below="@+id/txtNombre"
+        android:layout_marginTop="23dp"
+        android:text="Codigo" />
+
+    <TextView
+        android:id="@+id/TxtMateria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtCodigo"
+        android:layout_below="@+id/txtCodigo"
+        android:layout_marginTop="30dp"
+        android:text="Materia" />
+
+    <TextView
+        android:id="@+id/txtparcial1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TxtMateria"
+        android:layout_below="@+id/TxtMateria"
+        android:layout_marginTop="33dp"
+        android:text="Primer parcial" />
+
+    <TextView
+        android:id="@+id/txtparcial2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtparcial1"
+        android:layout_below="@+id/txtparcial1"
+        android:layout_marginTop="34dp"
+        android:text="Segundo parcial" />
+
+    <TextView
+        android:id="@+id/txtparcial3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtparcial2"
+        android:layout_below="@+id/txtparcial2"
+        android:layout_marginTop="37dp"
+        android:text="Tercer parcial" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtparcial3"
+        android:layout_marginTop="44dp"
+        android:layout_toEndOf="@+id/TxtMateria"
+        android:text="Guardar" />
+</RelativeLayout>
